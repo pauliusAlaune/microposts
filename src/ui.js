@@ -63,6 +63,13 @@ class UI {
         this.titleInput.value = '';
         this.bodyInpur.value = '';
     }
+    
+    // fill form to edit
+    fillForm(data) {
+        this.titleInput.value = data.title;
+        this.bodyInpur.value = data.body;
+        this.idInput.value = data.id;
+    }
 }
 
 export const ui = new UI();
